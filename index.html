@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet"> 
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  
+  <div class="container text-center goal-topper">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 id="goalBanner">Daily Goals</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <form id="form">
+        <input type="text" name="add-goal" id="addGoal" placeholder="Enter a goal for today">
+        <button>Add</button>
+      </form>
+    </div>
+
+    <div class="row toggle-container">
+      <div class="toggle-element" id="toggleGoals">
+        <button id="toggleButton" onclick="toggleCompleted()">Toogle</button>
+      </div>
+      <div id="goalStatusContainer" class="toggle-element">
+        <div id="toggleCompleted">All Goals</div>
+      </div>
+    </div> 
+  </div> <!-- end goal header -->
+
+    <div class="container text-center goals-container">
+      <div class="row goal-headers">
+        <h2 class="col-xs-1" id="completedStatus">Status</h2>
+        <h2 class="col-xs-9">Description</h2>
+      </div>
+
+      <ul id="goalList">
+      </ul>
+    </div>
+</div>
+
+   <script src="script.js"></script>
+</body>
+</html>

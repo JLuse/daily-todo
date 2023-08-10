@@ -1,0 +1,103 @@
+body {
+  font-family: 'Handlee', cursive;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#completedStatus {
+  padding-left: 0px;
+  padding-right: 25px;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.toggle-container {
+  text-align: center;
+  /* margin-top: 10px; */
+  margin: 10px 0 20px 0
+}
+
+.toggle-element {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.goal-headers {
+  padding-left: 40px;
+  margin: 15px 0 20px 0;
+}
+
+.goal-topper {
+  background-color: brown;
+}
+
+.goals-container {
+  background-color:#FADB6F;
+  border-radius: 0 0 10px 10px;
+}
+
+.goal-item {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.completed-container {
+  margin-top: 25px;
+}
+
+input[type=checkbox] {
+  width: 21px;
+  height: 21px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #464a4e;
+  border-color: #464a4e;
+}
+
+.remove-goal {
+  margin-top: 25px;
+  background-color: transparent; 
+  border: none;
+  color: #464a4e; 
+  cursor: pointer; 
+  padding: 0; 
+}
+
+
+.remove-goal:hover {
+  text-decoration: underline;
+}
+
+#toggleCompleted {
+  font-weight: bold;
+  font-size: 16px;
+}
+
